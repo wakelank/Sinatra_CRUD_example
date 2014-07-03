@@ -1,1 +1,16 @@
-styles.css
+body{
+  background-color: #E0C26C;
+  font-family: sans-serif;
+}
+
+h1{
+  font-family: sans-serif;
+}
+
+.container{
+  width: 800px;
+  margin: 0 auto;
+  border: solid #B15A47 3px;
+  border-radius: 5px;
+  padding: 10px;
+}
