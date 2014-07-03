@@ -1,2 +1,9 @@
 <h1>Here's a city you've been to.</h1>
 <%= @city.name %>
+<a href="/cities/<%= @city.id %>/edit"><button>edit</button></a>
+<form method="post" action="/cities/<%= @city.id %>">
+  <input type="hidden" name="_method" value="delete">
+  <button>Delete City</button>
+</form>
+
+<a href="/cities">back to index</a> 

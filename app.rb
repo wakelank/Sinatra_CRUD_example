@@ -26,3 +26,22 @@ get '/cities/:id' do
   @city = City.find(params[:id])
   erb :show
 end
+
+get '/cities/:id/edit' do
+  @city = City.find(params[:id])
+  erb :edit
+end
+
+put '/cities/:id' do
+  city = City.find(params[:id])
+  city.name = params[:name]
+  city.save
+  redirect "/cities/#{ city.id }"
+end
+
+delete '/cities/:id' do
+  City.delete(params[:id])
+  redirect '/cities'
+end
+
+

@@ -1,5 +1,5 @@
-<form action="/cities/<%= @friend.id %>" method="post">
+<form action="/cities/<%= @city.id %>" method="post">
   <input type="hidden" name="_method" value="put">
-  <input type="text" name="city" value="<%= @city.name %>">
+  <input type="text" name="name" value="<%= @city.name %>">
   <input type="submit">
 </form>
