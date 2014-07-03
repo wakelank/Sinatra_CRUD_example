@@ -1,0 +1,15 @@
+<h1>Cities you have been to</h1>
+
+<form action="/cities/new" method="get">
+  <button class="add-city">
+    Add a city
+  </button>
+</form>
+
+<ul class="city-list">
+<% @cities.each do |city| %>
+  <li><% city %></li>
+<% end %>
+</ul>
+
+
